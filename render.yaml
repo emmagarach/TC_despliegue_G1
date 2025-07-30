@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: wine-quality-api
+    env: python
+    repo: añadir url!!
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app_model:app
+    branch: main
+    autoDeploy: true
